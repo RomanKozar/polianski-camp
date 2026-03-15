@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## PolianskiCamp / To BE(e) Camp – лендинг табору
 
-## Getting Started
+**Репозиторій:** [github.com/RomanKozar/polianski-camp](https://github.com/RomanKozar/polianski-camp)
 
-First, run the development server:
+Односторінковий сайт табору PolianskiCamp / To BE(e) Camp, створений на базі `Next.js 15` (App Router) та Tailwind CSS.  
+Проєкт використовується для презентації змін 2026 року, програми табору, проживання та контактів для бронювання.
+
+### Технології
+
+- **Next.js** (App Router, TypeScript)
+- **React**
+- **Tailwind CSS** з кастомними токенами (`globals.css`)
+- Вбудований компонент `Image` для оптимізації зображень
+
+### Локальний запуск
+
+1. Встановіть залежності:
+
+```bash
+npm install
+```
+
+2. Запустіть dev‑сервер:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Відкрийте в браузері:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Основний контент сторінки знаходиться в файлі `src/app/page.tsx`.
 
-## Learn More
+### Основні розділи сторінки
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero / інтро** – коротко про табір та CTA‑кнопки.
+- **Зміни 2026** – картки зі змінами, датами та статусом місць.
+- **Про нас / програма** – опис формату табору To BE(e) Camp.
+- **Проживання** – блок про умови проживання (текст можна доповнити).
+- **Галерея, відгуки, FAQ** – місце для візуального та текстового контенту.
+- **Контакти** – адреса, телефон, Telegram та кнопка «Забронювати місце» з переходом на телефон.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Білд і продакшн
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Зібрати оптимізований білд:
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Або задеплоїти на будь‑який хостинг, сумісний з Next.js (наприклад, Vercel або інший Node.js‑хостинг).
