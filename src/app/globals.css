@@ -36,3 +36,20 @@ body {
 /* TODO: You can adjust global background, typography and utility classes here
    to better match your final PolianskiCamp brand style. */
 
+@keyframes benefits-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.benefits-marquee {
+  display: inline-flex;
+  animation: benefits-marquee 35s linear infinite;
+}
+
+.benefits-marquee:hover {
+  animation-play-state: paused;
+}

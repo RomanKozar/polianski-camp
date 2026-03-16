@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "PolianskiCamp · Live in the moment",
   description:
     "PolianskiCamp – a ski and adventure camp for kids, created together with the To BE(e) Camp team.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({

@@ -8,14 +8,14 @@ export const Footer = () => {
     <footer className="mt-16 mx-[-1rem] border-t border-white/10 bg-[#006980] text-white md:mx-[-1.5rem]">
       <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
         <div className="relative flex items-center justify-center rounded-t-[40px] bg-[#006980] px-6 py-4 md:rounded-t-[60px]">
-          {/* Left call button */}
+          {/* Left call button
           <Link
             href="#contacts"
             className="absolute left-0 hidden h-11 w-11 items-center justify-center rounded-full bg-polian-yellow text-[#006980] shadow-card-soft md:flex"
             aria-label="Зателефонувати"
           >
             📞
-          </Link>
+          </Link> */}
 
           {/* Center content: logo + text line */}
           <div className="flex flex-col items-center gap-2 text-center md:flex-row md:gap-4">
