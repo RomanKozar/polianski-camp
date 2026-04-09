@@ -1,5 +1,9 @@
 # 🏕️ PolianskiCamp / To BE(e) Camp 2026
 
+[![Live Demo](https://img.shields.io/badge/demo-online-blueviolet.svg?style=for-the-badge)](https://polianski-camp.vercel.app/)
+[![Powered by](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg?style=for-the-badge)](https://github.com/RomanKozar/polianski-camp/releases)
+
 ![Головна сторінка сайту](public/preview.png)
 
 ## 🐝 Про проєкт
