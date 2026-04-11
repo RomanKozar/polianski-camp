@@ -24,7 +24,7 @@ const benefitsGalleryImages = [
 
 const campVisitGalleryImages = Array.from(
 	{ length: 16 },
-	(_, index) => `/images/Camp-Visit/camp-visit-${index + 1}.avif`,
+	(_, index) => `/images/camp-visit/camp-visit-${index + 1}.avif`,
 )
 
 const campVisitBenefitCaptions = [

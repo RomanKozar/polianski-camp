@@ -110,7 +110,7 @@ const Contacts = () => {
 						>
 							<div className='relative aspect-4/3 w-full md:aspect-auto md:h-full'>
 								<Image
-									src='/images/contact-map-v2.png'
+									src='/images/contact-map-v2.avif'
 									alt='Мапа розташування Катерина готель'
 									fill
 									className='object-cover transition-transform duration-300 hover:scale-105'

@@ -37,7 +37,7 @@ const Seasons = () => {
 								<div className='flex items-center gap-3'>
 									<div className='flex h-[60px] w-[70px] items-center justify-center'>
 										<Image
-											src='/images/tobecamp-logo.png'
+											src='/images/logo/tobecamp-logo.png'
 											alt='To BE(e) Camp logo'
 											width={64}
 											height={64}
@@ -56,7 +56,7 @@ const Seasons = () => {
 								<div className='hidden shrink-0 md:block'>
 									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
 										<Image
-											src='/images/polianski-camp-logo.png'
+											src='/images/logo/polianski-camp-logo.png'
 											alt='PolianskiCamp logo'
 											width={50}
 											height={50}
@@ -315,7 +315,7 @@ const Seasons = () => {
 								<div className='flex items-center gap-3'>
 									{/* <div className='flex h-[60px] w-[70px] items-center justify-center'>
 										<Image
-											src='/images/tobecamp-logo.png'
+											src='/images/logo/tobecamp-logo.png'
 											alt='To BE(e) Camp logo'
 											width={64}
 											height={64}
@@ -324,7 +324,7 @@ const Seasons = () => {
 									</div> */}
 									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
 										<Image
-											src='/images/polianski-camp-logo.png'
+											src='/images/logo/polianski-camp-logo.png'
 											alt='PolianskiCamp logo'
 											width={50}
 											height={50}
@@ -343,7 +343,7 @@ const Seasons = () => {
 								<div className='hidden shrink-0 md:block'>
 									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
 										<Image
-											src='/images/lichi-logo-1.png'
+											src='/images/logo/lichi-logo-1.png'
 											alt='Lichi logo'
 											width={50}
 											height={50}

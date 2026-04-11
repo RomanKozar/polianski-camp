@@ -7,8 +7,18 @@ import { createPortal } from 'react-dom'
 
 const campPhoneNumber = '+380996384686'
 const accommodationGalleryImages = [
-	'/images/food-1.jpg',
-	...Array.from({ length: 12 }, () => '/images/home-1.jpg'),
+	'/images/summer/summer-25.avif',
+	'/images/summer/summer-38.avif',
+	'/images/summer/summer-6.avif',
+	'/images/summer/summer-9.avif',
+	'/images/summer/summer-12.avif',
+	'/images/summer/summer-15.avif',
+	'/images/summer/summer-18.avif',
+	'/images/summer/summer-21.avif',
+	'/images/summer/summer-27.avif',
+	'/images/summer/summer-31.avif',
+	'/images/summer/summer-44.avif',
+	'/images/summer/summer-53.avif',
 ]
 
 const Accommodations = () => {
@@ -66,7 +76,7 @@ const Accommodations = () => {
 								aria-label='Відкрити фото харчування'
 							>
 								<Image
-									src='/images/food-1.jpg'
+									src={accommodationGalleryImages[0]}
 									alt='Харчування в таборі'
 									fill
 									className='object-cover transition-transform duration-300 hover:scale-[1.02]'

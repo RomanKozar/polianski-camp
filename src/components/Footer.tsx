@@ -24,7 +24,7 @@ export const Footer = () => {
               <div className="flex items-center gap-1">
                 
                <Image
-            src="/images/polianski-camp-logo.png"
+            src="/images/logo/polianski-camp-logo.png"
             alt="PolianskiCamp logo"
             width={100}
             height={70}

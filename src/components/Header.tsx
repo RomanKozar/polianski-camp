@@ -39,7 +39,7 @@ export const Header = () => {
           >
             {/* Замініть src на свій реальний шлях до логотипу */}
             <Image
-              src="/images/polianski-camp-logo.png" 
+              src="/images/logo/polianski-camp-logo.png" 
               alt="PolianSki Camp"
               width={160}
               height={50}
