@@ -18,7 +18,6 @@ const accommodationGalleryImages = [
 	'/images/summer/summer-27.avif',
 	'/images/summer/summer-31.avif',
 	'/images/summer/summer-44.avif',
-	'/images/summer/summer-53.avif',
 ]
 
 const Accommodations = () => {
@@ -83,7 +82,7 @@ const Accommodations = () => {
 									sizes='(max-width: 768px) 100vw, 520px'
 								/>
 							</button>
-							<div className='grid grid-cols-3 gap-3 md:grid-cols-4'>
+							<div className='grid grid-cols-2 gap-3 md:grid-cols-2'>
 								{accommodationGalleryImages.slice(1).map((src, index) => (
 									<button
 										type='button'

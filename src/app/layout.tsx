@@ -30,7 +30,7 @@ export default function RootLayout({
 	return (
 		<html lang='uk'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('/images/gori.webp')] bg-cover bg-center bg-fixed text-slate-900`}
+				className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased bg-[url('/images/gori.webp')] bg-cover bg-center bg-fixed text-slate-900`}
 			>
 				{/* TODO: You can wrap everything in additional layout providers (e.g. analytics, theming) here. */}
 				<Header />
