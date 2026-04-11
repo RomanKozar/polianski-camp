@@ -54,7 +54,7 @@ const Seasons = () => {
 									</div>
 								</div>
 								<div className='hidden shrink-0 md:block'>
-									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
+									<div className='mr-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 min-h-12 min-w-12'>
 										<Image
 											src='/images/logo/polianski-camp-logo.png'
 											alt='PolianskiCamp logo'
@@ -322,7 +322,7 @@ const Seasons = () => {
 											className='h-15 w-auto object-contain'
 										/>
 									</div> */}
-									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
+									<div className='mr-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 min-h-12 min-w-12'>
 										<Image
 											src='/images/logo/polianski-camp-logo.png'
 											alt='PolianskiCamp logo'
@@ -341,7 +341,7 @@ const Seasons = () => {
 									</div>
 								</div>
 								<div className='hidden shrink-0 md:block'>
-									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
+									<div className='mr-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 min-h-12 min-w-12'>
 										<Image
 											src='/images/logo/lichi-logo-1.png'
 											alt='Lichi logo'
