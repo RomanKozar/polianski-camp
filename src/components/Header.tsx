@@ -43,7 +43,7 @@ export const Header = () => {
               alt="PolianSki Camp"
               width={160}
               height={50}
-              className="h-28 w-auto object-contain"
+              className="h-16 w-auto object-contain sm:h-20 md:h-24 lg:h-28"
             />
           </button>
         </div>
@@ -66,7 +66,7 @@ export const Header = () => {
           {/* Номер телефону (видимий завжди) */}
           <a
             href="tel:+380996384686"
-            className="text-xs font-bold tracking-wide text-white transition-colors hover:text-[#F9E267] sm:text-sm md:text-base lg:text-lg"
+            className="text-[10px] font-bold tracking-normal text-white transition-colors hover:text-[#F9E267] sm:text-xs md:text-sm lg:text-base"
           >
             +38 (099) 638-4686
           </a>
