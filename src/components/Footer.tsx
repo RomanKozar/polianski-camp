@@ -24,11 +24,11 @@ export const Footer = () => {
               <div className="flex items-center gap-1">
                 
                <Image
-            src="/images/polianski-logo.png"
+            src="/images/polianski-camp-logo.png"
             alt="PolianskiCamp logo"
             width={100}
             height={70}
-            className="h-17 w-auto"
+            className="h-22 w-auto"
           />
               </div>
               <span className="text-sm font-semibold tracking-[0.16em] uppercase">

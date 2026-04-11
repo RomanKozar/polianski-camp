@@ -3,11 +3,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const campPhoneNumber = '+380XXXXXXXXX'
+const campPhoneNumber = '+380996384686'
 
 const Seasons = () => {
 	return (
-		<section id='seasons' className='mx--1rem bg-[#F0F2D6] py-10 md:mx--1.5rem'>
+		<section
+			id='seasons'
+			className='mx--1rem rounded-[20px] bg-[#F0F2D6] py-10 md:mx--1.5rem'
+		>
 			<div className='mx-auto max-w-6xl px-4 md:px-6'>
 				<section id='changes-2026' className='space-y-6'>
 					<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue'>
@@ -20,7 +23,7 @@ const Seasons = () => {
 							style={{ borderRadius: '20px' }}
 						>
 							<header
-								className='flex items-center justify-between gap-3 rounded-t-card-xl bg-[#006980] px-5 py-4 text-white'
+								className='flex min-h-[92px] items-center justify-between gap-3 rounded-t-card-xl bg-[#006980] px-5 py-4 text-white'
 								style={{
 									borderTopLeftRadius: '20px',
 									borderTopRightRadius: '20px',
@@ -53,11 +56,11 @@ const Seasons = () => {
 								<div className='hidden shrink-0 md:block'>
 									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
 										<Image
-											src='/images/polianski-logo.png'
+											src='/images/polianski-camp-logo.png'
 											alt='PolianskiCamp logo'
 											width={50}
 											height={50}
-											className='h-7 w-auto'
+											className='h-12 w-auto'
 										/>
 									</div>
 								</div>
@@ -88,11 +91,11 @@ const Seasons = () => {
 												</span>
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
-												<span className='text-[12px] font-semibold text-slate-900'>
+												<span className='text-[12px] font-semibold text-slate-400 line-through'>
 													💲23 500 грн
 												</span>
-												<span className='text-[10px] font-semibold text-polian-red'>
-													22 000 грн до 15.05
+												<span className='rounded-full bg-polian-red/15 px-2 py-0.5 text-[10px] font-semibold text-polian-red'>
+													Продано
 												</span>
 											</div>
 										</li>
@@ -109,8 +112,8 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													💲23 500 грн
 												</span>
-												<span className='text-[10px] font-semibold text-polian-red'>
-													22 000 грн до 15.05
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
 												</span>
 											</div>
 										</li>
@@ -127,8 +130,8 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													💲23 500 грн
 												</span>
-												<span className='text-[10px] font-semibold text-polian-red'>
-													22 000 грн до 15.05
+												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
+													Залишилось 15 місць
 												</span>
 											</div>
 										</li>
@@ -145,8 +148,8 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													💲23 500 грн
 												</span>
-												<span className='text-[10px] font-semibold text-polian-red'>
-													22 000 грн до 15.05
+												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
+													Залишилось 12 місць
 												</span>
 											</div>
 										</li>
@@ -163,8 +166,8 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													💲23 500 грн
 												</span>
-												<span className='text-[10px] font-semibold text-polian-red'>
-													22 000 грн до 15.05
+												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
+													Залишилось 13 місць
 												</span>
 											</div>
 										</li>
@@ -301,7 +304,7 @@ const Seasons = () => {
 							style={{ borderRadius: '20px' }}
 						>
 							<header
-								className='flex items-center justify-between gap-3 rounded-t-card-xl bg-[#006980] px-5 py-4 text-white'
+								className='flex min-h-[92px] items-center justify-between gap-3 rounded-t-card-xl bg-[#006980] px-5 py-4 text-white'
 								style={{
 									borderTopLeftRadius: '20px',
 									borderTopRightRadius: '20px',
@@ -310,7 +313,7 @@ const Seasons = () => {
 								}}
 							>
 								<div className='flex items-center gap-3'>
-									<div className='flex h-[60px] w-[70px] items-center justify-center'>
+									{/* <div className='flex h-[60px] w-[70px] items-center justify-center'>
 										<Image
 											src='/images/tobecamp-logo.png'
 											alt='To BE(e) Camp logo'
@@ -318,21 +321,30 @@ const Seasons = () => {
 											height={64}
 											className='h-15 w-auto object-contain'
 										/>
+									</div> */}
+									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
+										<Image
+											src='/images/polianski-camp-logo.png'
+											alt='PolianskiCamp logo'
+											width={50}
+											height={50}
+											className='h-12 w-auto'
+										/>
 									</div>
 									<div className='leading-tight'>
 										<p className='text-xs font-semibold uppercase tracking-[0.26em]'>
 											Зимні зміни на території партнера
 										</p>
 										<p className='text-[11px] opacity-80'>
-											To BE(e) Camp + PolianskiCamp
+											PolianskiCamp
 										</p>
 									</div>
 								</div>
 								<div className='hidden shrink-0 md:block'>
 									<div className='mr-1 flex h-12 w-12 items-center justify-center rounded-full bg-white/10'>
 										<Image
-											src='/images/polianski-logo.png'
-											alt='PolianskiCamp logo'
+											src='/images/lichi-logo-1.png'
+											alt='Lichi logo'
 											width={50}
 											height={50}
 											className='h-7 w-auto'
@@ -341,6 +353,11 @@ const Seasons = () => {
 								</div>
 							</header>
 							<div className='space-y-6 px-5 py-5 text-sm text-slate-800'>
+								<div className='flex justify-center'>
+									<p className='inline-flex rounded-full bg-amber-100 px-3 py-1 text-[14px] font-semibold uppercase tracking-wide text-amber-700'>
+										Очікуйте старт бронювання
+									</p>
+								</div>
 								<div className='space-y-3 rounded-2xl bg-polian-blue/5 p-4'>
 									<div className='flex items-center justify-between gap-3 blur-[3px] select-none'>
 										<p className='flex items-center gap-2 font-semibold text-polian-dark-blue'>
@@ -453,7 +470,7 @@ const Seasons = () => {
 									❗ Раннє бронювання до 15 травня ❗
 								</div>
 
-								<div className='space-y-4 rounded-2xl bg-slate-50 p-4 blur-[3px] select-none'>
+								<div className='hidden space-y-4 rounded-2xl bg-slate-50 p-4 blur-[3px] select-none md:block'>
 									<p className='text-sm font-extrabold tracking-tight text-polian-dark-blue md:text-base'>
 										✨ Що чекає на дітей у нашому таборі? ✨
 									</p>

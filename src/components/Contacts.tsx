@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const campPhoneNumber = '+380XXXXXXXXX'
+const campPhoneNumber = '+380996384686'
 
 const Contacts = () => {
 	return (
 		<section
 			id='contacts'
-			className='-mx-4 bg-[#F0F2D6] py-10 md:-mx-6 md:py-14'
+			className='-mx-4 rounded-[20px] bg-[#F0F2D6] py-10 md:-mx-6 md:py-14'
 		>
 			<div className='mx-auto max-w-6xl space-y-6 px-4 md:px-6'>
 				<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
@@ -29,14 +29,29 @@ const Contacts = () => {
 									Сонячна, 55 Б, Поляна, Закарпатська область
 								</p>
 								<div className='space-y-1 text-sm text-slate-800'>
-									<p>
+									<p className='flex flex-wrap items-center gap-2'>
 										<span className='mr-2 text-polian-blue'>📞</span>
 										<a
-											href='tel:+380969112222'
+											href='tel:+380996384686'
 											className='text-polian-dark-blue underline-offset-2 hover:text-polian-yellow hover:underline'
 										>
-											+38 (096) 000-0000
+											+38 (099) 638-4686
 										</a>
+										<span className='inline-flex rounded-full bg-amber-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-amber-700'>
+										Бронювання заїздів
+										</span>
+									</p>
+									<p className='flex flex-wrap items-center gap-2'>
+									<span className='mr-2 text-polian-blue'>📞</span>
+										<a
+											href='tel:+380935523253'
+											className='text-polian-dark-blue underline-offset-2 hover:text-polian-yellow hover:underline'
+										>
+											+38 (093) 552-3253
+										</a>
+										<span className='inline-flex rounded-full bg-amber-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-amber-700'>
+										Групові заїзди
+										</span>
 									</p>
 									<p>
 										<span className='mr-2 text-polian-blue'>✉️</span>
@@ -65,12 +80,12 @@ const Contacts = () => {
 						<div className='grid gap-4 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]'>
 							<Link
 								href={`tel:${campPhoneNumber}`}
-								className='flex h-23 items-center justify-center gap-3 rounded-2xl bg-foreground px-4 py-3 text-left text-white shadow-card-soft transition hover:-translate-y-0.5 hover:shadow-lg mt-3 mb-3 md:h-25 md:mt-5 md:mb-5'
+								className='mt-3 mb-3 inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-black bg-[#006980] px-5 py-3 text-center text-xs font-semibold uppercase tracking-wide text-white shadow-card-soft transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 md:mt-5 md:mb-5'
 							>
-								<span className='mb-2 inline-flex h-8 w-8 flex-col items-center justify-center rounded-lg bg-white/15 text-xl'>
+								<span className='inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/15 text-sm'>
 									💬
 								</span>
-								<span className='text-base font-semibold leading-snug'>
+								<span className='leading-snug'>
 									Забронювати місце
 								</span>
 							</Link>
@@ -99,6 +114,7 @@ const Contacts = () => {
 									alt='Мапа розташування Катерина готель'
 									fill
 									className='object-cover transition-transform duration-300 hover:scale-105'
+									sizes='(max-width: 768px) 100vw, 45vw'
 								/>
 								<div className='pointer-events-none absolute inset-x-0 bottom-0 flex justify-end p-3'>
 									<span className='inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold text-slate-800 shadow-sm'>

@@ -1,11 +1,17 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
+  const scrollToTop = () => {
+    const cleanUrl = `${window.location.pathname}${window.location.search}`;
+    window.history.replaceState(null, "", cleanUrl);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setOpen(false);
+  };
 
   const navItems = [
     { href: "#seasons", label: "Зміни" },
@@ -24,17 +30,22 @@ export const Header = () => {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Ліва частина: Логотип */}
-        <div className="flex shrink-0 items-center">
-          <Link href="/" className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center px-2.5">
+          <button
+            type="button"
+            className="flex cursor-pointer items-center gap-2 transition-opacity hover:opacity-90"
+            onClick={scrollToTop}
+            aria-label="Прокрутити на початок сторінки"
+          >
             {/* Замініть src на свій реальний шлях до логотипу */}
             <Image
-              src="/images/polianski-logo.png" 
+              src="/images/polianski-camp-logo.png" 
               alt="PolianSki Camp"
               width={160}
               height={50}
-              className="h-12 w-auto object-contain"
+              className="h-28 w-auto object-contain"
             />
-          </Link>
+          </button>
         </div>
 
         {/* Центральна частина: Меню (тільки для десктопу) */}
@@ -54,10 +65,10 @@ export const Header = () => {
         <div className="flex items-center gap-6">
           {/* Номер телефону (видимий завжди) */}
           <a
-            href="tel:+380969112222"
+            href="tel:+380996384686"
             className="text-base font-bold tracking-wider text-white transition-colors hover:text-[#F9E267] sm:text-lg"
           >
-            +38 (096) 911-2222
+            +38 (099) 638-4686
           </a>
 
           {/* Бургер-меню (тільки для мобільних) */}
@@ -97,7 +108,7 @@ export const Header = () => {
           ))}
           {/* Додаткова кнопка в мобільному меню */}
           <a
-            href="tel:+380969112222"
+            href="tel:+380996384686"
             className="mt-4 block w-full rounded-md bg-[#F9E267] px-4 py-3 text-center text-base font-bold text-[#006980] shadow-sm hover:bg-opacity-90 transition-all"
             onClick={() => setOpen(false)}
           >

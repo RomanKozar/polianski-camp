@@ -15,7 +15,7 @@ export default function HomePage() {
 			<FloatingWidget />
 
 			{/* Головний екран (Hero section) */}
-			<section className='-mx-4 mb-10 bg-[#F0F2D6] pt-4 pb-12 md:-mx-6 md:pt-6'>
+			<section className='-mx-4 mb-10 rounded-[20px] bg-[#F0F2D6] pt-4 pb-12 md:-mx-6 md:pt-6'>
 				<div className='mx-auto max-w-6xl px-4 md:px-6'>
 					<div
 						className='rounded-card-xl bg-white/95 p-6 shadow-card-soft lg:flex lg:items-center lg:justify-between lg:p-10'
@@ -43,7 +43,7 @@ export default function HomePage() {
 								</Link>
 								<Link
 									href='#contacts'
-									className='inline-flex rounded-full border border-black bg-white px-5 py-2 text-xs font-semibold uppercase tracking-wide text-polian-dark-blue shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:border-black hover:bg-[#006980] hover:text-white'
+									className='inline-flex rounded-full border border-black bg-[#006980] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-card-soft transition-all duration-300 hover:-translate-y-0.5 hover:scale-105'
 								>
 									Приєднатись
 								</Link>
@@ -55,10 +55,11 @@ export default function HomePage() {
 							<div className='relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm'>
 								<div className='relative aspect-4/3 w-full'>
 									<Image
-										src='/images/children-v2.jpg'
+										src='/images/summer-holovna.avif'
 										alt='Діти в таборі PolianskiCamp · To BE(e) Camp'
 										fill
 										className='object-cover'
+										sizes='(max-width: 1024px) 100vw, 560px'
 										priority
 									/>
 								</div>

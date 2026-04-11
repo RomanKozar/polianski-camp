@@ -4,7 +4,10 @@ import Image from 'next/image'
 
 const About = () => {
 	return (
-		<section id='about' className='mx--1rem bg-[#F0F2D6] py-10 md:mx--1.5rem'>
+		<section
+			id='about'
+			className='mx--1rem rounded-[20px] bg-[#F0F2D6] py-10 md:mx--1.5rem'
+		>
 			<div className='mx-auto max-w-6xl px-4 md:px-6'>
 				<section id='about-program' className='space-y-6'>
 					<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue'>
@@ -36,10 +39,11 @@ const About = () => {
 							<div className='border-t border-polian-dark-blue/10 bg-polian-blue/5 p-5'>
 								<div className='relative aspect-4/3 w-full overflow-hidden rounded-2xl bg-slate-200'>
 									<Image
-										src='/images/foto-1.jpg'
+										src='/images/summer/summer-33.avif'
 										alt='Діти в таборі To BE(e) Camp'
 										fill
 										className='object-cover'
+										sizes='(max-width: 768px) 100vw, 50vw'
 									/>
 								</div>
 							</div>
@@ -80,10 +84,11 @@ const About = () => {
 									style={{ borderRadius: '20px' }}
 								>
 									<Image
-										src='/images/foto-2.jpg'
+										src='/images/summer/summer-53.avif'
 										alt='Акторські заняття To BE(e) Camp'
 										fill
 										className='object-cover'
+										sizes='(max-width: 768px) 100vw, 50vw'
 									/>
 								</div>
 							</div>
@@ -123,7 +128,7 @@ const About = () => {
 							className='rounded-card-xl bg-white p-6 shadow-card-soft'
 							style={{ borderRadius: '20px' }}
 						>
-							<div className='rounded-2xl border border-violet-200/70 bg-white p-5 max-h-64 overflow-y-auto'>
+							<div className='rounded-2xl border border-violet-200/70 bg-white p-5 max-h-64 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-slate-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#006980]'>
 								<ul className='divide-y divide-violet-100/70'>
 									<li className='flex gap-4 py-4 first:pt-0 last:pb-0'>
 										<span className='mt-0.5 text-violet-500'>＋</span>

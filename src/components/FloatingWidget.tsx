@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-const campPhoneNumber = '+380969112222'
+const campPhoneNumber = '+380996384686'
 
 export default function FloatingWidget() {
 	const [isOpen, setIsOpen] = useState(false)
