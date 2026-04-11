@@ -239,7 +239,7 @@ const Gallery = () => {
 									<button
 										type='button'
 										key={src}
-										className='group relative mr-3 min-w-57.5 max-w-65 shrink-0 overflow-hidden rounded-[26px] bg-slate-200 text-left shadow-card-soft cursor-pointer'
+										className='group relative mr-3 min-w-57.5 max-w-65 shrink-0 overflow-hidden rounded-[26px] bg-transparent text-left shadow-card-soft cursor-pointer'
 										onClick={() =>
 											setLightbox({
 												images: benefitsGalleryImages,
@@ -253,7 +253,7 @@ const Gallery = () => {
 												src={src}
 												alt='Дитячий табір PolianskiCamp · To BE(e) Camp'
 												fill
-												className='object-contain bg-slate-100'
+												className='object-contain'
 												sizes='(max-width: 640px) 230px, 260px'
 											/>
 											<div
