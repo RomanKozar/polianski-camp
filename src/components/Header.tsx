@@ -66,7 +66,7 @@ export const Header = () => {
           {/* Номер телефону (видимий завжди) */}
           <a
             href="tel:+380996384686"
-            className="text-base font-bold tracking-wider text-white transition-colors hover:text-[#F9E267] sm:text-lg"
+            className="text-xs font-bold tracking-wide text-white transition-colors hover:text-[#F9E267] sm:text-sm md:text-base lg:text-lg"
           >
             +38 (099) 638-4686
           </a>
