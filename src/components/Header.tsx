@@ -100,7 +100,9 @@ export const Header = () => {
       {/* Мобільне випадаюче меню */}
       <div 
         className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          open ? "max-h-96 opacity-100 border-t border-white/20" : "max-h-0 opacity-0"
+          open
+            ? "max-h-[calc(100dvh-5rem)] overflow-y-auto opacity-100 border-t border-white/20"
+            : "max-h-0 opacity-0"
         }`}
         style={{ backgroundColor: "#005566" }} // Трохи темніший фон для випадаючого меню
       >
