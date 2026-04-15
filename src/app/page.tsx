@@ -55,7 +55,7 @@ export default function HomePage() {
 							<div className='relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm'>
 								<div className='relative aspect-4/3 w-full'>
 									<Image
-										src='/images/summer-holovna.avif'
+										src='/images/golovna-foto.avif'
 										alt='Діти в таборі PolianskiCamp · To BE(e) Camp'
 										fill
 										className='object-cover'

@@ -78,6 +78,7 @@ const Accommodations = () => {
 									src={accommodationGalleryImages[0]}
 									alt='Харчування в таборі'
 									fill
+									unoptimized
 									className='object-cover transition-transform duration-300 hover:scale-[1.02]'
 									sizes='(max-width: 768px) 100vw, 520px'
 								/>
@@ -96,6 +97,7 @@ const Accommodations = () => {
 												src={src}
 												alt='Проживання та територія табору'
 												fill
+												unoptimized
 												className='object-cover transition-transform duration-300 hover:scale-[1.04]'
 												sizes='(max-width: 768px) 100vw, 220px'
 											/>
@@ -251,6 +253,7 @@ const Accommodations = () => {
 										src={lightboxSrc}
 										alt='Фото табору'
 										fill
+										unoptimized
 										className='lightbox-image-animate object-contain'
 										sizes='(max-width: 768px) 92vw, 1200px'
 									/>

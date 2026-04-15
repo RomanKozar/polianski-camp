@@ -182,6 +182,7 @@ const Gallery = () => {
 												src={src}
 												alt='Дитячий табір PolianskiCamp · To BE(e) Camp'
 												fill
+												unoptimized
 												className='object-cover'
 												sizes='(max-width: 640px) 230px, 260px'
 											/>
@@ -259,6 +260,7 @@ const Gallery = () => {
 												src={src}
 												alt='Дитячий табір PolianskiCamp · To BE(e) Camp'
 												fill
+												unoptimized
 												className='object-contain'
 												sizes='(max-width: 640px) 230px, 260px'
 											/>
@@ -310,6 +312,7 @@ const Gallery = () => {
 														src={src}
 														alt='Світлина з літнього заїзду'
 														fill
+														unoptimized
 														className='object-cover'
 														sizes='(max-width: 640px) 260px, (max-width: 1024px) 300px, 320px'
 													/>
@@ -356,6 +359,7 @@ const Gallery = () => {
 														src={src}
 														alt='Світлина із зимового заїзду'
 														fill
+														unoptimized
 														className='object-cover'
 														sizes='(max-width: 640px) 260px, (max-width: 1024px) 300px, 320px'
 													/>
@@ -388,6 +392,7 @@ const Gallery = () => {
 										src={lightboxSrc}
 										alt='Фото з табору'
 										fill
+										unoptimized
 										className='lightbox-image-animate object-contain'
 										sizes='(max-width: 768px) 92vw, 1200px'
 									/>
