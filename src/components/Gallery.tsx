@@ -89,20 +89,20 @@ const splitIntoTwoRows = <T,>(items: T[]) => {
 
 const camperShortVideos = [
 	{
-		title: 'Shorts #1 · PolianskiCamp',
-		embedUrl: 'https://www.youtube.com/embed/fnpqBThZ2AU',
+		title: 'Відео #1 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/vIMA1FMyP4c',
 	},
 	{
-		title: 'Shorts #2 · PolianskiCamp',
-		embedUrl: 'https://www.youtube.com/embed/dfvNCnBigk4',
+		title: 'Відео #2 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/dZmViDLp0S4',
 	},
 	{
-		title: 'Shorts #3 · PolianskiCamp',
-		embedUrl: 'https://www.youtube.com/embed/fnpqBThZ2AU',
+		title: 'Відео #3 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/hjCnZoMgcuY',
 	},
 	{
-		title: 'Shorts #4 · PolianskiCamp',
-		embedUrl: 'https://www.youtube.com/embed/dfvNCnBigk4',
+		title: 'Відео #4 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/ZsKVj0Nmw1w',
 	},
 ]
 
@@ -203,9 +203,9 @@ const Gallery = () => {
 				{/* Блок 1 – відео-відгуки */}
 				<div className='space-y-4'>
 					<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
-						Відео-відгуки кемперів
+						Наші відео
 					</h2>
-					<div className='grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4'>
+					<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4'>
 						{camperShortVideos.map(video => (
 							<article
 								key={video.title}
@@ -214,13 +214,19 @@ const Gallery = () => {
 							>
 								<div className='space-y-3'>
 									<div className='relative aspect-3/4 w-full overflow-hidden rounded-2xl bg-slate-200 sm:aspect-9/16'>
-										<iframe
-											src={video.embedUrl}
-											title={video.title}
-											className='h-full w-full'
-											allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-											allowFullScreen
-										/>
+										{video.embedUrl ? (
+											<iframe
+												src={video.embedUrl}
+												title={video.title}
+												className='h-full w-full'
+												allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+												allowFullScreen
+											/>
+										) : (
+											<div className='flex h-full w-full items-center justify-center bg-linear-to-br from-slate-700 to-slate-500 p-4 text-center text-sm font-semibold text-white'>
+												Відео скоро буде тут
+											</div>
+										)}
 									</div>
 									<p className='text-xs font-semibold text-slate-800 sm:text-sm'>{video.title}</p>
 								</div>
@@ -229,7 +235,7 @@ const Gallery = () => {
 					</div>
 				</div>
 
-				<div className='space-y-5'>
+				<div id='reviews-about' className='scroll-mt-28 space-y-5'>
 					<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
 						Відгуки про нас
 					</h2>

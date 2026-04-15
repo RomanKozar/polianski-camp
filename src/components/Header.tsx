@@ -17,7 +17,8 @@ export const Header = () => {
     { href: "#seasons", label: "Зміни" },
     { href: "#about", label: "Про нас" },
     { href: "#accommodations", label: "Проживання" },
-    { href: "#reviews", label: "Відгуки" },
+    { href: "#reviews-about", label: "Відгуки" },
+    { href: "#reviews", label: "Запитання" },
     { href: "#gallery", label: "Галерея" },
     { href: "#contacts", label: "Контакти" },
   ];
@@ -52,7 +53,7 @@ export const Header = () => {
         <nav className="hidden lg:flex items-center justify-center gap-8">
           {navItems.map((item) => (
             <Link
-              key={item.href}
+              key={`${item.href}-${item.label}`}
               href={item.href}
               className="text-sm font-medium tracking-wide text-white transition-colors duration-200 hover:text-[#F9E267]" // Жовтий hover
             >
@@ -106,7 +107,7 @@ export const Header = () => {
         <nav className="px-4 pt-2 pb-6 space-y-2 shadow-inner">
           {navItems.map((item) => (
             <Link
-              key={item.href}
+              key={`${item.href}-${item.label}`}
               href={item.href}
               className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-[#F9E267] transition-colors"
               onClick={() => setOpen(false)}
