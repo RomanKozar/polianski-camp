@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const campPhoneNumber = '+380996384686'
 
@@ -38,7 +37,7 @@ const Contacts = () => {
 											+38 (099) 638-4686
 										</a>
 										<span className='inline-flex rounded-full bg-amber-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-amber-700'>
-										Бронювання заїздів
+										Відділ бронювання
 										</span>
 									</p>
 									<p className='flex flex-wrap items-center gap-2'>
@@ -53,7 +52,7 @@ const Contacts = () => {
 										Групові заїзди
 										</span>
 									</p>
-									<p>
+									{/* <p>
 										<span className='mr-2 text-polian-blue'>✉️</span>
 										<a
 											href='mailto:polianskicamp.ua@gmail.com'
@@ -61,7 +60,7 @@ const Contacts = () => {
 										>
 											polianskicamp.ua@gmail.com
 										</a>
-									</p>
+									</p> */}
 									<p>
 										<span className='mr-2 text-polian-blue'>💬</span>
 										<a
@@ -100,29 +99,30 @@ const Contacts = () => {
 						</div>
 					</div>
 
-					{/* Right side – map / image */}
+					{/* Right side – interactive Google Map */}
 					<div className='flex items-stretch'>
-						<a
-							href='https://www.google.com/maps/place/%D0%9A%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0/@48.6212797,22.968822,506m/data=!3m1!1e3!4m9!3m8!1s0x47391853102c6fb5:0x1b8d4f42d81957a2!5m2!4m1!1i2!8m2!3d48.6211428!4d22.9703324!16s%2Fg%2F1tkc5fzz?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D'
-							target='_blank'
-							rel='noreferrer'
-							className='block w-full overflow-hidden rounded-3xl bg-slate-100'
-						>
-							<div className='relative aspect-4/3 w-full md:aspect-auto md:h-full'>
-								<Image
-									src='/images/contact-map-v2.avif'
-									alt='Мапа розташування Катерина готель'
-									fill
-									className='object-cover transition-transform duration-300 hover:scale-105'
-									sizes='(max-width: 768px) 100vw, 45vw'
+						<div className='relative w-full overflow-hidden rounded-3xl bg-slate-100'>
+							<div className='relative aspect-4/3 w-full md:aspect-auto md:h-full md:min-h-[420px]'>
+								<iframe
+									title='Мапа розташування Катерина готель'
+									src='https://maps.google.com/maps?ll=48.6211428,22.9703324&q=%D0%9A%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0%20%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8C,%20%D0%9F%D0%BE%D0%BB%D1%8F%D0%BD%D0%B0&t=k&z=16&output=embed'
+									className='h-full w-full border-0'
+									loading='lazy'
+									referrerPolicy='no-referrer-when-downgrade'
+									allowFullScreen
 								/>
 								<div className='pointer-events-none absolute inset-x-0 bottom-0 flex justify-end p-3'>
-									<span className='inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold text-slate-800 shadow-sm'>
-										Відкрити в Google Maps
-									</span>
+									<a
+										href='https://www.google.com/maps/place/%D0%9A%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0/@48.6212797,22.968822,506m/data=!3m1!1e3!4m9!3m8!1s0x47391853102c6fb5:0x1b8d4f42d81957a2!5m2!4m1!1i2!8m2!3d48.6211428!4d22.9703324!16s%2Fg%2F1tkc5fzz?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D'
+										target='_blank'
+										rel='noreferrer'
+										className='pointer-events-auto inline-flex items-center gap-1 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold text-slate-800 shadow-sm transition hover:bg-white'
+									>
+										Відкрити в Google Maps
+									</a>
 								</div>
 							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>

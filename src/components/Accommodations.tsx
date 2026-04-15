@@ -7,17 +7,16 @@ import { createPortal } from 'react-dom'
 
 const campPhoneNumber = '+380996384686'
 const accommodationGalleryImages = [
-	'/images/summer/summer-25.avif',
-	'/images/summer/summer-38.avif',
-	'/images/summer/summer-6.avif',
-	'/images/summer/summer-9.avif',
-	'/images/summer/summer-12.avif',
-	'/images/summer/summer-15.avif',
-	'/images/summer/summer-18.avif',
-	'/images/summer/summer-21.avif',
-	'/images/summer/summer-27.avif',
-	'/images/summer/summer-31.avif',
-	'/images/summer/summer-44.avif',
+	'/images/accommodation/accommodation-9.avif',
+	'/images/accommodation/accommodation-1.avif',
+	'/images/accommodation/accommodation-2.avif',
+	'/images/accommodation/accommodation-3.avif',
+	'/images/accommodation/accommodation-4.avif',
+	'/images/accommodation/accommodation-5.avif',
+	'/images/accommodation/accommodation-6.avif',
+	'/images/accommodation/accommodation-7.avif',
+	'/images/accommodation/accommodation-8.avif',
+	'/images/accommodation/accommodation-10.avif',
 ]
 
 const Accommodations = () => {
@@ -55,7 +54,7 @@ const Accommodations = () => {
 	return (
 		<section
 			id='accommodations'
-			className='mx--1rem rounded-[20px] bg-[#F0F2D6] py-10 md:mx--1.5rem'
+			className='-mx-4 rounded-[20px] bg-[#F0F2D6] py-10 md:-mx-6'
 		>
 			<div className='mx-auto max-w-6xl space-y-6 px-4 md:px-6'>
 				<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue'>
@@ -82,12 +81,12 @@ const Accommodations = () => {
 									sizes='(max-width: 768px) 100vw, 520px'
 								/>
 							</button>
-							<div className='grid grid-cols-2 gap-3 md:grid-cols-2'>
+							<div className='grid grid-cols-1 gap-3 md:grid-cols-2'>
 								{accommodationGalleryImages.slice(1).map((src, index) => (
 									<button
 										type='button'
 										key={`home-photo-${index}`}
-										className='aspect-4/3 cursor-pointer overflow-hidden rounded-xl bg-slate-200 text-left'
+										className='aspect-video cursor-pointer overflow-hidden rounded-xl bg-slate-200 text-left md:aspect-4/3'
 										onClick={() => setLightboxIndex(index + 1)}
 										aria-label='Відкрити фото проживання'
 									>
@@ -97,7 +96,7 @@ const Accommodations = () => {
 												alt='Проживання та територія табору'
 												fill
 												className='object-cover transition-transform duration-300 hover:scale-[1.04]'
-												sizes='(max-width: 768px) 30vw, 110px'
+												sizes='(max-width: 768px) 100vw, 220px'
 											/>
 										</div>
 									</button>
@@ -237,22 +236,22 @@ const Accommodations = () => {
 			{lightboxSrc && typeof document !== 'undefined'
 				? createPortal(
 						<div
-							className='fixed inset-0 z-999 flex h-dvh w-full items-center justify-center bg-black/60 p-4 backdrop-blur-sm'
+							className='lightbox-overlay-animate fixed inset-0 z-999 flex h-dvh w-full items-center justify-center bg-black/60 p-4 backdrop-blur-sm'
 							role='dialog'
 							aria-modal='true'
 							onClick={() => setLightboxIndex(null)}
 						>
 							<div
-								className='relative w-full max-w-5xl overflow-hidden rounded-3xl bg-black shadow-2xl'
+								className='lightbox-panel-animate relative w-full max-w-5xl overflow-hidden rounded-3xl bg-white/5 shadow-2xl'
 								onClick={e => e.stopPropagation()}
 							>
-								<div className='relative aspect-4/3 w-full sm:aspect-16/10'>
+								<div className='relative h-[82vh] w-full sm:h-[85vh]'>
 									<Image
 										src={lightboxSrc}
 										alt='Фото табору'
 										fill
-										className='object-contain'
-										sizes='(max-width: 768px) 95vw, 900px'
+										className='lightbox-image-animate object-contain'
+										sizes='(max-width: 768px) 92vw, 1200px'
 									/>
 								</div>
 								<button
@@ -279,7 +278,7 @@ const Accommodations = () => {
 												: (prev + 1) % accommodationGalleryImages.length,
 										)
 									}
-									className='absolute right-14 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-2xl font-semibold text-slate-900 shadow-sm backdrop-blur hover:bg-white'
+									className='absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-2xl font-semibold text-slate-900 shadow-sm backdrop-blur hover:bg-white'
 									aria-label='Наступне фото'
 								>
 									›

@@ -80,9 +80,17 @@ export const Header = () => {
           >
             <span className="sr-only">Відкрити головне меню</span>
             {/* Іконка бургера (дві лінії, як на вашому фото) */}
-            <div className="space-y-1.5">
-              <span className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${open ? 'rotate-45 translate-y-2' : ''}`}></span>
-              <span className={`block h-0.5 w-6 bg-current transform transition duration-300 ease-in-out ${open ? '-rotate-45 -translate-y-0.5' : ''}`}></span>
+            <div className="relative h-5 w-6">
+              <span
+                className={`absolute left-0 top-1/2 block h-0.5 w-6 -translate-y-1/2 bg-current transform transition duration-300 ease-in-out ${
+                  open ? "rotate-45" : "-translate-y-[6px]"
+                }`}
+              ></span>
+              <span
+                className={`absolute left-0 top-1/2 block h-0.5 w-6 -translate-y-1/2 bg-current transform transition duration-300 ease-in-out ${
+                  open ? "-rotate-45" : "translate-y-[6px]"
+                }`}
+              ></span>
             </div>
           </button>
         </div>
@@ -109,7 +117,7 @@ export const Header = () => {
           {/* Додаткова кнопка в мобільному меню */}
           <a
             href="tel:+380996384686"
-            className="mt-4 block w-full rounded-md bg-[#F9E267] px-4 py-3 text-center text-base font-bold text-[#006980] shadow-sm hover:bg-opacity-90 transition-all"
+            className="mt-4 mx-3 block rounded-md bg-[#F9E267] px-4 py-3 text-center text-base font-bold text-[#006980] shadow-sm hover:bg-opacity-90 transition-all"
             onClick={() => setOpen(false)}
           >
             Подзвонити зараз

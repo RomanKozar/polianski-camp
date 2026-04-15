@@ -368,22 +368,22 @@ const Gallery = () => {
 			{lightboxSrc && typeof document !== 'undefined'
 				? createPortal(
 						<div
-							className='fixed inset-0 z-999 flex h-dvh w-full items-center justify-center bg-black/60 p-4 backdrop-blur-sm'
+							className='lightbox-overlay-animate fixed inset-0 z-999 flex h-dvh w-full items-center justify-center bg-black/60 p-4 backdrop-blur-sm'
 							role='dialog'
 							aria-modal='true'
 							onClick={() => setLightbox(null)}
 						>
 							<div
-								className='relative w-full max-w-5xl overflow-hidden rounded-3xl bg-black shadow-2xl'
+								className='lightbox-panel-animate relative w-full max-w-5xl overflow-hidden rounded-3xl bg-white/5 shadow-2xl'
 								onClick={e => e.stopPropagation()}
 							>
-								<div className='relative aspect-4/3 w-full sm:aspect-16/10'>
+								<div className='relative h-[82vh] w-full sm:h-[85vh]'>
 									<Image
 										src={lightboxSrc}
 										alt='Фото з табору'
 										fill
-										className='object-contain'
-										sizes='(max-width: 768px) 95vw, 900px'
+										className='lightbox-image-animate object-contain'
+										sizes='(max-width: 768px) 92vw, 1200px'
 									/>
 								</div>
 								<button
