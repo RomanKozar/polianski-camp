@@ -64,7 +64,7 @@ const Contacts = () => {
 									<p>
 										<span className='mr-2 text-polian-blue'>💬</span>
 										<a
-											href='https://t.me/polianskicamp'
+											href='https://t.me/iyalynao'
 											target='_blank'
 											rel='noreferrer'
 											className='text-polian-dark-blue underline-offset-2 hover:text-polian-yellow hover:underline'

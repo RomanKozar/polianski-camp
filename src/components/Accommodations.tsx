@@ -7,16 +7,17 @@ import { createPortal } from 'react-dom'
 
 const campPhoneNumber = '+380996384686'
 const accommodationGalleryImages = [
-	'/images/accommodation/accommodation-9.avif',
-	'/images/accommodation/accommodation-1.avif',
-	'/images/accommodation/accommodation-2.avif',
-	'/images/accommodation/accommodation-3.avif',
-	'/images/accommodation/accommodation-4.avif',
-	'/images/accommodation/accommodation-5.avif',
-	'/images/accommodation/accommodation-6.avif',
-	'/images/accommodation/accommodation-7.avif',
-	'/images/accommodation/accommodation-8.avif',
-	'/images/accommodation/accommodation-10.avif',
+	'/images/accommodation/accommodation-v2-1.avif',
+	'/images/accommodation/accommodation-v2-2.avif',
+	'/images/accommodation/accommodation-v2-3.avif',
+	'/images/accommodation/accommodation-v2-4.avif',
+	'/images/accommodation/accommodation-v2-5.avif',
+	'/images/accommodation/accommodation-v2-6.avif',
+	'/images/accommodation/accommodation-v2-7.avif',
+	'/images/accommodation/accommodation-v2-8.avif',
+	'/images/accommodation/accommodation-v2-9.avif',
+	'/images/accommodation/accommodation-v2-10.avif',
+	'/images/accommodation/accommodation-v2-11.avif',
 ]
 
 const Accommodations = () => {
