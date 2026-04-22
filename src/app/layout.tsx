@@ -16,10 +16,36 @@ const geistMono = Geist_Mono({
 	subsets: ['latin'],
 })
 
+const siteUrl =
+	process.env.NEXT_PUBLIC_SITE_URL ?? 'https://polianski-camp.vercel.app'
+/** Google Search Console; можна замінити через GOOGLE_SITE_VERIFICATION */
+const googleSiteVerification =
+	process.env.GOOGLE_SITE_VERIFICATION ??
+	'Ry90muz5f4mcdihUWpg--5DuAvOsDAYahvTQijtr6FQ'
+
 export const metadata: Metadata = {
-	title: 'Дитячий табір PolianskiCamp | Живи в моменті',
+	metadataBase: new URL(siteUrl),
+	title: {
+		default: 'Дитячий табір PolianskiCamp | Живи в моменті',
+		template: '%s | PolianskiCamp',
+	},
 	description:
 		'PolianskiCamp – активний відпочинок та пригоди для дітей у Карпатах. Створено спільно з командою To BE(e) Camp.',
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: { index: true, follow: true },
+	},
+	verification: { google: googleSiteVerification },
+	openGraph: {
+		type: 'website',
+		locale: 'uk_UA',
+		url: siteUrl,
+		siteName: 'PolianskiCamp',
+		title: 'Дитячий табір PolianskiCamp | Живи в моменті',
+		description:
+			'PolianskiCamp – активний відпочинок та пригоди для дітей у Карпатах. Створено спільно з командою To BE(e) Camp.',
+	},
 }
 
 export default function RootLayout({

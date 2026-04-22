@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
+
 // TODO: This page is a template for a specific PolianskiCamp change (shift).
 // Replace all placeholder texts and gallery items with real information for "Change 1".
+
+export const metadata: Metadata = {
+  title: 'Зміна 1',
+  description:
+    'Інформація про зміну 1 дитячого табору PolianskiCamp у Карпатах. To BE(e) Camp.',
+}
 
 export default function ZminaOnePage() {
   return (
