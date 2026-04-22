@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { getSiteBaseUrl } from '../lib/siteUrl'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -16,8 +17,7 @@ const geistMono = Geist_Mono({
 	subsets: ['latin'],
 })
 
-const siteUrl =
-	process.env.NEXT_PUBLIC_SITE_URL ?? 'https://polianski-camp.vercel.app'
+const siteUrl = getSiteBaseUrl()
 /** Google Search Console; можна замінити через GOOGLE_SITE_VERIFICATION */
 const googleSiteVerification =
 	process.env.GOOGLE_SITE_VERIFICATION ??
