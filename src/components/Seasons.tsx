@@ -102,7 +102,7 @@ const Seasons = () => {
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
 											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
-													07.07 – 15.07
+													05.07 – 11.07
 												</span>
 												<span className='text-[11px] text-slate-600'>
 													2-й заїзд
@@ -110,7 +110,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													💲18 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
 													Залишилось 20 місць
@@ -394,7 +394,7 @@ const Seasons = () => {
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
 											<div className='flex flex-col blur-[3px] select-none'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
-													07.07 – 15.07
+													05.07 – 11.07
 												</span>
 												<span className='text-[11px] text-slate-600'>
 													2-й заїзд
