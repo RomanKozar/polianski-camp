@@ -91,11 +91,11 @@ const Seasons = () => {
 												</span>
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
-												<span className='text-[12px] font-semibold text-slate-400 line-through'>
-													💲23 500 грн
+												<span className='text-[12px] font-semibold text-slate-900'>
+													💲21 500 грн
 												</span>
-												<span className='rounded-full bg-polian-red/15 px-2 py-0.5 text-[10px] font-semibold text-polian-red'>
-													Продано
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
 												</span>
 											</div>
 										</li>
