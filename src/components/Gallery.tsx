@@ -87,7 +87,18 @@ const splitIntoTwoRows = <T,>(items: T[]) => {
 	return [items.slice(0, middle), items.slice(middle)] as const
 }
 
-const camperShortVideos = [
+const galleryScrollClass =
+	'overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-slate-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#006980]'
+
+const galleryScrollPanelClass =
+	'relative overflow-hidden rounded-3xl border border-violet-200/70 bg-white px-5 py-6'
+
+type GalleryVideo = {
+	title: string
+	embedUrl: string
+}
+
+const camperShortVideos: GalleryVideo[] = [
 	{
 		title: 'Відео #1 · PolianskiCamp',
 		embedUrl: 'https://www.youtube.com/embed/vIMA1FMyP4c',
@@ -105,6 +116,106 @@ const camperShortVideos = [
 		embedUrl: 'https://www.youtube.com/embed/ZsKVj0Nmw1w',
 	},
 ]
+
+const reviewVideos: GalleryVideo[] = [
+	{
+		title: 'Відгук #1 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/dOzyxx7ao6Q',
+	},
+	{
+		title: 'Відгук #2 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/SjItdUST9zo',
+	},
+	{
+		title: 'Відгук #3 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/N01CT9RZ-hE',
+	},
+	{
+		title: 'Відгук #4 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/JivyNPqd4pw',
+	},
+	{
+		title: 'Відгук #5 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/YP3tLpqeDyE',
+	},
+	{
+		title: 'Відгук #6 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/0Ga9UY6ADDc',
+	},
+	{
+		title: 'Відгук #7 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/7rds_NjXoS8',
+	},
+	{
+		title: 'Відгук #8 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/BlPJ3ooeWGI',
+	},
+	{
+		title: 'Відгук #9 · PolianskiCamp',
+		embedUrl: 'https://www.youtube.com/embed/nBws5K4HzYk',
+	},
+]
+
+const VideoCard = ({ video }: { video: GalleryVideo }) => (
+	<article
+		className='rounded-card-xl bg-white p-3 shadow-card-soft sm:p-4'
+		style={{ borderRadius: '20px' }}
+	>
+		<div className='space-y-3'>
+			<div className='relative aspect-3/4 w-full overflow-hidden rounded-2xl bg-slate-200 sm:aspect-9/16'>
+				{video.embedUrl ? (
+					<iframe
+						src={video.embedUrl}
+						title={video.title}
+						className='h-full w-full'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						allowFullScreen
+					/>
+				) : (
+					<div className='flex h-full w-full items-center justify-center bg-linear-to-br from-slate-700 to-slate-500 p-4 text-center text-sm font-semibold text-white'>
+						Відео скоро буде тут
+					</div>
+				)}
+			</div>
+			<p className='text-xs font-semibold text-slate-800 sm:text-sm'>{video.title}</p>
+		</div>
+	</article>
+)
+
+const VideoCardGrid = ({
+	videos,
+	scrollable = false,
+}: {
+	videos: GalleryVideo[]
+	scrollable?: boolean
+}) => {
+	if (scrollable) {
+		return (
+			<div className={galleryScrollPanelClass}>
+				<div className={galleryScrollClass}>
+					<div className='flex w-max snap-x snap-mandatory gap-3 sm:gap-4'>
+						{videos.map(video => (
+							<div
+								key={video.title}
+								className='w-[min(78vw,259px)] shrink-0 snap-start sm:w-[259px]'
+							>
+								<VideoCard video={video} />
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		)
+	}
+
+	return (
+		<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4'>
+			{videos.map(video => (
+				<VideoCard key={video.title} video={video} />
+			))}
+		</div>
+	)
+}
 
 type LightboxState = {
 	images: string[]
@@ -206,34 +317,7 @@ const Gallery = () => {
 					<h2 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
 						Наші відео
 					</h2>
-					<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4'>
-						{camperShortVideos.map(video => (
-							<article
-								key={video.title}
-								className='rounded-card-xl bg-white p-3 shadow-card-soft sm:p-4'
-								style={{ borderRadius: '20px' }}
-							>
-								<div className='space-y-3'>
-									<div className='relative aspect-3/4 w-full overflow-hidden rounded-2xl bg-slate-200 sm:aspect-9/16'>
-										{video.embedUrl ? (
-											<iframe
-												src={video.embedUrl}
-												title={video.title}
-												className='h-full w-full'
-												allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-												allowFullScreen
-											/>
-										) : (
-											<div className='flex h-full w-full items-center justify-center bg-linear-to-br from-slate-700 to-slate-500 p-4 text-center text-sm font-semibold text-white'>
-												Відео скоро буде тут
-											</div>
-										)}
-									</div>
-									<p className='text-xs font-semibold text-slate-800 sm:text-sm'>{video.title}</p>
-								</div>
-							</article>
-						))}
-					</div>
+					<VideoCardGrid videos={camperShortVideos} />
 				</div>
 
 				<div id='reviews-about' className='scroll-mt-28 space-y-5'>
@@ -277,6 +361,7 @@ const Gallery = () => {
 								))}
 						</div>
 					</div>
+					<VideoCardGrid videos={reviewVideos} scrollable />
 				</div>
 
 				{/* Блок 2 – фото-галерея / колаж */}
@@ -284,8 +369,8 @@ const Gallery = () => {
 					<h3 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
 						Галерея теплих спогадів наших таборів
 					</h3>
-					<div className='relative overflow-hidden rounded-3xl border border-violet-200/70 bg-white px-5 py-6'>
-						<div className='overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-slate-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#006980]'>
+					<div className={galleryScrollPanelClass}>
+						<div className={galleryScrollClass}>
 							<div className='w-max space-y-4'>
 								{[summerTopRow, summerBottomRow].map((row, rowIndex) => (
 									<div
@@ -331,8 +416,8 @@ const Gallery = () => {
 					<h3 className='text-2xl font-bold tracking-tight text-polian-dark-blue md:text-3xl'>
 						Найяскравіші моменти з зимових заїздів
 					</h3>
-					<div className='relative overflow-hidden rounded-3xl border border-violet-200/70 bg-white px-5 py-6'>
-						<div className='overflow-x-auto pb-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-slate-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#006980]'>
+					<div className={galleryScrollPanelClass}>
+						<div className={galleryScrollClass}>
 							<div className='w-max space-y-4'>
 								{[winterTopRow, winterBottomRow].map((row, rowIndex) => (
 									<div
