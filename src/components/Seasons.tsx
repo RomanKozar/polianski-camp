@@ -92,7 +92,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲21 500 грн
+													<span className='text-emerald-600'>₴</span> 21 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
 													Залишилось 20 місць
@@ -110,7 +110,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲18 500 грн
+													<span className='text-emerald-600'>₴</span> 18 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
 													Залишилось 16 місць
@@ -128,7 +128,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
 													Залишилось 14 місць
@@ -146,7 +146,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
 													Залишилось 7 місць
@@ -164,7 +164,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
 													Залишилось 13 місць
@@ -384,7 +384,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='text-[10px] font-semibold text-polian-red'>
 													22 000 грн до 15.05
@@ -402,7 +402,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='text-[10px] font-semibold text-polian-red'>
 													22 000 грн до 15.05
@@ -420,7 +420,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='text-[10px] font-semibold text-polian-red'>
 													22 000 грн до 15.05
@@ -438,7 +438,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='text-[10px] font-semibold text-polian-red'>
 													22 000 грн до 15.05
@@ -456,7 +456,7 @@ const Seasons = () => {
 											</div>
 											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
 												<span className='text-[12px] font-semibold text-slate-900'>
-													💲23 500 грн
+													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='text-[10px] font-semibold text-polian-red'>
 													22 000 грн до 15.05
