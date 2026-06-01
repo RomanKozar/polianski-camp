@@ -95,7 +95,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 21 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
-													Залишилось 20 місць
+													Залишилось 18 місць
 												</span>
 											</div>
 										</li>
@@ -113,7 +113,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 18 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
-													Залишилось 16 місць
+													Залишилось 15 місць
 												</span>
 											</div>
 										</li>
@@ -149,7 +149,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
-													Залишилось 7 місць
+													Залишилось 9 місць
 												</span>
 											</div>
 										</li>
@@ -167,7 +167,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
-													Залишилось 13 місць
+													Залишилось 9 місць
 												</span>
 											</div>
 										</li>
