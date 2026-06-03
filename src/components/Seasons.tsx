@@ -95,7 +95,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 21 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
-													Залишилось 18 місць
+													Залишилось 5 місць
 												</span>
 											</div>
 										</li>
@@ -113,7 +113,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 18 500 грн
 												</span>
 												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
-													Залишилось 15 місць
+													Залишилось 7 місць
 												</span>
 											</div>
 										</li>
@@ -131,7 +131,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
-													Залишилось 14 місць
+													Залишилось 5 місць
 												</span>
 											</div>
 										</li>
@@ -149,7 +149,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
-													Залишилось 9 місць
+													Залишилось 8 місць
 												</span>
 											</div>
 										</li>
@@ -167,7 +167,7 @@ const Seasons = () => {
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
 												<span className='rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700'>
-													Залишилось 9 місць
+													Залишилось 6 місць
 												</span>
 											</div>
 										</li>
@@ -175,7 +175,7 @@ const Seasons = () => {
 								</div>
 
 								<div className='mb-3 rounded-2xl bg-polian-yellow/80 px-4 py-2 text-center text-xs font-semibold text-polian-dark-blue shadow-sm'>
-									❗ Раннє бронювання до 15 травня ❗
+									❗ Раннє бронювання доступне за зверненням на polyana.info або при бронюванні від 2 дітей ❗
 								</div>
 
 								<div className='space-y-4 rounded-2xl bg-slate-50 p-4'>
@@ -467,7 +467,7 @@ const Seasons = () => {
 								</div>
 
 								<div className='mb-3 rounded-2xl bg-polian-yellow/80 px-4 py-2 text-center text-xs font-semibold text-polian-dark-blue shadow-sm blur-[3px] select-none'>
-									❗ Раннє бронювання до 15 травня ❗
+									❗ Раннє бронювання доступне за зверненням на polyana.info або при бронюванні від 2 дітей ❗
 								</div>
 
 								<div className='hidden space-y-4 rounded-2xl bg-slate-50 p-4 blur-[3px] select-none md:block'>
