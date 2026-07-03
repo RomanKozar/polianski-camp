@@ -40,11 +40,19 @@ export const Footer = () => {
               ·
             </span>
 
-            <div className="flex flex-col items-center gap-1 text-xs uppercase tracking-[0.16em] md:flex-row md:gap-3">
-              <span className="text-polian-yellow">Live in the moment</span>
-              <span className="text-white/70">
-                © {new Date().getFullYear()} PolianskiCamp · To BE(e) Camp team
-              </span>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex flex-col items-center gap-1 text-xs uppercase tracking-[0.16em] md:flex-row md:gap-3">
+                <span className="text-polian-yellow">Live in the moment</span>
+                <span className="text-white/70">
+                  © {new Date().getFullYear()} PolianskiCamp · To BE(e) Camp team
+                </span>
+              </div>
+              <Link
+                href="/public-offer"
+                className="text-xs uppercase tracking-[0.16em] text-white/70 transition-colors hover:text-polian-yellow"
+              >
+                Договір публічної офери
+              </Link>
             </div>
           </div>
 
