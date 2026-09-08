@@ -180,6 +180,7 @@ const Seasons = () => {
 									</ul>
 								</div>
 
+								<div className='hidden space-y-6 md:block'>
 								<div className='mb-3 rounded-2xl bg-polian-yellow/80 px-4 py-2 text-center text-xs font-semibold text-polian-dark-blue shadow-sm'>
 									❗ Раннє бронювання доступне за зверненням на polyana.info або при бронюванні від 2 дітей ❗
 								</div>
@@ -302,6 +303,7 @@ const Seasons = () => {
 									>
 										Зателефонувати
 									</Link>
+								</div>
 								</div>
 								</div>
 							</div>
