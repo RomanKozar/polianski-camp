@@ -71,8 +71,9 @@ const Seasons = () => {
 										Очікуйте старт бронювання
 									</p>
 								</div>
+								<div className='space-y-6 blur-[4px] select-none pointer-events-none'>
 								<div className='space-y-3 rounded-2xl bg-polian-blue/5 p-4'>
-									<div className='flex items-center justify-between gap-3 blur-[3px] select-none'>
+									<div className='flex items-center justify-between gap-3'>
 										<p className='flex items-center gap-2 font-semibold text-polian-dark-blue'>
 											<span className='inline-flex h-7 w-7 items-center justify-center rounded-full bg-polian-blue/10 text-base'>
 												📅
@@ -87,7 +88,7 @@ const Seasons = () => {
 									</div>
 									<ul className='mt-2 space-y-2 text-xs md:text-sm'>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
-											<div className='flex flex-col blur-[3px] select-none'>
+											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
 													21.06 – 29.06
 												</span>
@@ -95,7 +96,7 @@ const Seasons = () => {
 													1-й заїзд
 												</span>
 											</div>
-											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
+											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 21 500 грн
 												</span>
@@ -105,7 +106,7 @@ const Seasons = () => {
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
-											<div className='flex flex-col blur-[3px] select-none'>
+											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
 													05.07 – 11.07
 												</span>
@@ -113,7 +114,7 @@ const Seasons = () => {
 													2-й заїзд
 												</span>
 											</div>
-											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
+											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 18 500 грн
 												</span>
@@ -123,7 +124,7 @@ const Seasons = () => {
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
-											<div className='flex flex-col blur-[3px] select-none'>
+											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
 													18.07 – 26.07
 												</span>
@@ -131,7 +132,7 @@ const Seasons = () => {
 													3-й заїзд
 												</span>
 											</div>
-											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
+											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
@@ -141,7 +142,7 @@ const Seasons = () => {
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
-											<div className='flex flex-col blur-[3px] select-none'>
+											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
 													29.07 – 06.08
 												</span>
@@ -149,7 +150,7 @@ const Seasons = () => {
 													4-й заїзд
 												</span>
 											</div>
-											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
+											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
@@ -159,7 +160,7 @@ const Seasons = () => {
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
-											<div className='flex flex-col blur-[3px] select-none'>
+											<div className='flex flex-col'>
 												<span className='text-[13px] font-semibold text-polian-dark-blue'>
 													09.08 – 17.08
 												</span>
@@ -167,7 +168,7 @@ const Seasons = () => {
 													5-й заїзд
 												</span>
 											</div>
-											<div className='flex flex-col items-end leading-tight blur-[3px] select-none'>
+											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 23 500 грн
 												</span>
@@ -179,11 +180,11 @@ const Seasons = () => {
 									</ul>
 								</div>
 
-								<div className='mb-3 rounded-2xl bg-polian-yellow/80 px-4 py-2 text-center text-xs font-semibold text-polian-dark-blue shadow-sm blur-[3px] select-none'>
+								<div className='mb-3 rounded-2xl bg-polian-yellow/80 px-4 py-2 text-center text-xs font-semibold text-polian-dark-blue shadow-sm'>
 									❗ Раннє бронювання доступне за зверненням на polyana.info або при бронюванні від 2 дітей ❗
 								</div>
 
-								<div className='hidden space-y-4 rounded-2xl bg-slate-50 p-4 blur-[3px] select-none md:block'>
+								<div className='space-y-4 rounded-2xl bg-slate-50 p-4'>
 									<p className='text-sm font-extrabold tracking-tight text-polian-dark-blue md:text-base'>
 										✨ Що чекає на дітей у нашому таборі? ✨
 									</p>
@@ -294,11 +295,14 @@ const Seasons = () => {
 								<div className='pt-2'>
 									<Link
 										href={`tel:${campPhoneNumber}`}
-										className='inline-flex rounded-full border border-black bg-polian-blue px-4 py-2 text-xs font-semibold uppercase tracking-wide text-foreground transition-all duration-300 hover:bg-[#006980] hover:text-white hover:-translate-y-0.5 hover:scale-105'
+										className='inline-flex rounded-full border border-black bg-polian-blue px-4 py-2 text-xs font-semibold uppercase tracking-wide text-foreground'
 										role='button'
+										tabIndex={-1}
+										aria-disabled='true'
 									>
 										Зателефонувати
 									</Link>
+								</div>
 								</div>
 							</div>
 						</article>
@@ -386,6 +390,9 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 27 000 грн
 												</span>
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
+												</span>
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
@@ -400,6 +407,9 @@ const Seasons = () => {
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 25 500 грн
+												</span>
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
 												</span>
 											</div>
 										</li>
@@ -416,6 +426,9 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 25 500 грн
 												</span>
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
+												</span>
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
@@ -431,6 +444,9 @@ const Seasons = () => {
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 25 500 грн
 												</span>
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
+												</span>
 											</div>
 										</li>
 										<li className='flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-2 shadow-sm'>
@@ -445,6 +461,9 @@ const Seasons = () => {
 											<div className='flex flex-col items-end leading-tight'>
 												<span className='text-[12px] font-semibold text-slate-900'>
 													<span className='text-emerald-600'>₴</span> 25 500 грн
+												</span>
+												<span className='rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+													Залишилось 20 місць
 												</span>
 											</div>
 										</li>
